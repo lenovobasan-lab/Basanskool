@@ -21,14 +21,6 @@
 
   <body>
     <div id="root"></div>
-    <script>
-      const route = sessionStorage.getItem("spa-route");
-      if (route) {
-        sessionStorage.removeItem("spa-route");
-        const repository = window.location.pathname.split("/")[1];
-        history.replaceState(null, "", `/${repository}${route}`);
-      }
-    </script>
     <script type="module" src="/src/main.tsx"></script>
     <script
       defer
