@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      const path = window.location.pathname;
+      const repository = path.split("/")[1];
+      const route = path.slice(repository ? repository.length + 1 : 0);
+      sessionStorage.setItem("spa-route", route + window.location.search + window.location.hash);
+      window.location.replace(`/${repository}/`);
+    </script>
+  </head>
+  <body></body>
+</html>
