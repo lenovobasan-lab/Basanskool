@@ -4,34 +4,35 @@ import { useEffect, useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import Videos from "@/components/Videos";
 import EditorialRail from "@/components/EditorialRail";
+import { assetUrl } from "@/lib/school-config";
 
 export const galleryEvents = [
   {
     title: "Cultural Program",
     photos: [
-      { src: "/events/cultural-program.JPG", alt: "Students gathering in the school courtyard" },
-      { src: "/events/cultural-program-2.JPG", alt: "Students crossing the school lawn" },
-      { src: "/events/cultural-program-3.JPG", alt: "Students working together at a classroom table" },
-      { src: "/events/cultural-program-4.JPG", alt: "Students taking part in a cultural program" },
-      { src: "/events/cultural-program-5.JPG", alt: "Students sharing a cultural performance" },
-      { src: "/events/cultural-program-6.JPG", alt: "Students celebrating together at school" },
+      { src: assetUrl("events/cultural-program.JPG"), alt: "Students gathering in the school courtyard" },
+      { src: assetUrl("events/cultural-program-2.JPG"), alt: "Students crossing the school lawn" },
+      { src: assetUrl("events/cultural-program-3.JPG"), alt: "Students working together at a classroom table" },
+      { src: assetUrl("events/cultural-program-4.JPG"), alt: "Students taking part in a cultural program" },
+      { src: assetUrl("events/cultural-program-5.JPG"), alt: "Students sharing a cultural performance" },
+      { src: assetUrl("events/cultural-program-6.JPG"), alt: "Students celebrating together at school" },
     ],
   },
   {
     title: "Science in practice",
     photos: [
-      { src: "/events/science-exhibition.jpg", alt: "Students presenting a science exhibition" },
-      { src: "/events/science-fair-2.JPG", alt: "Students demonstrating a science project" },
-      { src: "/events/science-fair-3.jpg", alt: "Students exploring a science fair display" },
-      { src: "/events/science-fair-4.jpg", alt: "Students working on a science experiment" },
+      { src: assetUrl("events/science-exhibition.jpg"), alt: "Students presenting a science exhibition" },
+      { src: assetUrl("events/science-fair-2.JPG"), alt: "Students demonstrating a science project" },
+      { src: assetUrl("events/science-fair-3.jpg"), alt: "Students exploring a science fair display" },
+      { src: assetUrl("events/science-fair-4.jpg"), alt: "Students working on a science experiment" },
     ],
   },
   {
     title: "Sports day",
     photos: [
-      { src: "/events/sports-day.JPEG", alt: "Students taking part in sports day" },
-      { src: "/events/sports-day-2.JPEG", alt: "Students competing during sports day" },
-      { src: "/events/sports-day-3.JPEG", alt: "Students celebrating at sports day" },
+      { src: assetUrl("events/sports-day.JPEG"), alt: "Students taking part in sports day" },
+      { src: assetUrl("events/sports-day-2.JPEG"), alt: "Students competing during sports day" },
+      { src: assetUrl("events/sports-day-3.JPEG"), alt: "Students celebrating at sports day" },
     ],
   },
 ];

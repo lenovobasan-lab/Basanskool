@@ -1,23 +1,23 @@
 // Editorial School Journal staff directory: portrait-led cards, clear contact details, and a calm catalog rhythm.
 import { Mail, Phone, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
-import { schoolConfig } from "@/lib/school-config";
+import { assetUrl, schoolConfig } from "@/lib/school-config";
 import EditorialRail from "@/components/EditorialRail";
 
 const staffData = [
-  { id: 1, name: "Mrs.Chuda Devi Poudel", position: "Principal & Founding Educator", contact: "+977-9845123401", image: "/staff/principal.jpg" },
-  { id: 2, name: "Mr. KB Basnet", position: "Head of Learning", contact: "+977-9845123402", image: "/staff/vice-principal.jpg" },
-  { id: 3, name: "Mrs. Niru Rai", position: "Early Childhood Educator", contact: "+977-9845123403", image: "/staff/ecd-teacher.JPG" },
-  { id: 4, name: "Mr. Basanta Bhattarai", position: "Science & ICT", contact: "+977-9845123404", image: "/staff/science-teacher.PNG" },
-  { id: 5, name: "Mr. Bobby Karki ", position: "Department Of English ", contact: "+977-9845123405", image: "/staff/english-teacher.JPG" },
-  { id: 6, name: "Mrs. Mira Humagain", position: "Social Activities & Community Lead", contact: "+977-9845123406", image: "/staff/social-teacher.jpg" },
-  { id: 7, name: "Mr. Pradip Rijal", position: "Mathematics & Design", contact: "+977-9845123407", image: "/staff/maths-teacher.jpeg" },
-  { id: 8, name: "Mrs. Veedhya Laksam", position: "Nepali Language & Culture", contact: "+977-9845123408", image: "/staff/nepali-teacher.jpg" },
-  { id: 9, name: "Mrs. Pranita Khadka", position: "English Language & Arts & Crafts", contact: "+977-9845123409", image: "/staff/english-teacher2.JPG" },
-  { id: 10, name: "Mrs. Bhawana Neupane", position: "Department Of English", contact: "+977-9845123410", image: "/staff/english-teacher1.jpg" },
-  { id: 11, name: "Mrs. Bhagawati Nepal", position: "Department of Nepali Language", contact: "+977-9845123411", image: "/staff/nepali-teacher1.jpg" },
-  { id: 12, name: "Ms. Archana Thami", position: "Dance, Music Arts & Crafts", contact: "+977-9845123412", image: "/staff/dance-teacher.JPG" },
-  { id: 13, name: "Mr. Madan Rai", position: "Department Of English", contact: "+977-9845123413", image: "/staff/IMG_2885.jpeg" },
+  { id: 1, name: "Mrs.Chuda Devi Poudel", position: "Principal & Founding Educator", contact: "+977-9845123401", image: assetUrl("staff/principal.jpg") },
+  { id: 2, name: "Mr. KB Basnet", position: "Head of Learning", contact: "+977-9845123402", image: assetUrl("staff/vice-principal.jpg") },
+  { id: 3, name: "Mrs. Niru Rai", position: "Early Childhood Educator", contact: "+977-9845123403", image: assetUrl("staff/ecd-teacher.JPG") },
+  { id: 4, name: "Mr. Basanta Bhattarai", position: "Science & ICT", contact: "+977-9845123404", image: assetUrl("staff/science-teacher.PNG") },
+  { id: 5, name: "Mr. Bobby Karki ", position: "Department Of English ", contact: "+977-9845123405", image: assetUrl("staff/english-teacher.JPG") },
+  { id: 6, name: "Mrs. Mira Humagain", position: "Social Activities & Community Lead", contact: "+977-9845123406", image: assetUrl("staff/social-teacher.jpg") },
+  { id: 7, name: "Mr. Pradip Rijal", position: "Mathematics & Design", contact: "+977-9845123407", image: assetUrl("staff/maths-teacher.jpeg") },
+  { id: 8, name: "Mrs. Veedhya Laksam", position: "Nepali Language & Culture", contact: "+977-9845123408", image: assetUrl("staff/nepali-teacher.jpg") },
+  { id: 9, name: "Mrs. Pranita Khadka", position: "English Language & Arts & Crafts", contact: "+977-9845123409", image: assetUrl("staff/english-teacher2.JPG") },
+  { id: 10, name: "Mrs. Bhawana Neupane", position: "Department Of English", contact: "+977-9845123410", image: assetUrl("staff/english-teacher1.jpg") },
+  { id: 11, name: "Mrs. Bhagawati Nepal", position: "Department of Nepali Language", contact: "+977-9845123411", image: assetUrl("staff/nepali-teacher1.jpg") },
+  { id: 12, name: "Ms. Archana Thami", position: "Dance, Music Arts & Crafts", contact: "+977-9845123412", image: assetUrl("staff/dance-teacher.JPG") },
+  { id: 13, name: "Mr. Madan Rai", position: "Department Of English", contact: "+977-9845123413", image: assetUrl("staff/IMG_2885.jpeg") },
 ];
 
 export default function Staff() {

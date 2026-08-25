@@ -2,14 +2,15 @@
 import { ArrowUpRight, CalendarDays, Pin } from "lucide-react";
 import { Link } from "wouter";
 import EditorialRail from "@/components/EditorialRail";
+import { assetUrl } from "@/lib/school-config";
 
 const noticesData = [
-  { id: 1, title: "Admissions for 2026 are now open", date: "18 Aug 2026", image: "/hero/cover.png", description: "Applications are open for Grades 1–8. Visit the admissions desk or write to our office to begin a conversation." },
-  { id: 2, title: "Founder's Day: the long table", date: "07 Aug 2026", image: "/events/cultural-program.JPG", description: "Families and alumni are invited to an afternoon of shared food, student work, and stories from the early years." },
-  { id: 3, title: "Term II learning conferences", date: "28 Jul 2026", image: "/events/science-exhibition.jpg", description: "Conference sign-ups are available through the class mentors. Please reserve one slot per learner." },
-  { id: 4, title: "Community garden workday", date: "15 Jul 2026", image: "/events/sports-day.JPEG", description: "A Saturday morning of planting, repairing, and making the garden classroom ready for the monsoon term." },
-  { id: 5, title: "Library hours during the break", date: "30 Jun 2026", image: "/notices/vacation-schedule.jpg", description: "The library remains open on Tuesday and Thursday afternoons for reading, returns, and quiet project time." },
-  { id: 6, title: "Student council nominations", date: "18 Jun 2026", image: "/events/cultural-program-5.JPG", description: "Learners in Grades 6–8 can nominate themselves or a peer for the next student council cycle." },
+  { id: 1, title: "Admissions for 2026 are now open", date: "18 Aug 2026", image: assetUrl("hero/cover.png"), description: "Applications are open for Grades 1–8. Visit the admissions desk or write to our office to begin a conversation." },
+  { id: 2, title: "Founder's Day: the long table", date: "07 Aug 2026", image: assetUrl("events/cultural-program.JPG"), description: "Families and alumni are invited to an afternoon of shared food, student work, and stories from the early years." },
+  { id: 3, title: "Term II learning conferences", date: "28 Jul 2026", image: assetUrl("events/science-exhibition.jpg"), description: "Conference sign-ups are available through the class mentors. Please reserve one slot per learner." },
+  { id: 4, title: "Community garden workday", date: "15 Jul 2026", image: assetUrl("events/sports-day.JPEG"), description: "A Saturday morning of planting, repairing, and making the garden classroom ready for the monsoon term." },
+  { id: 5, title: "Library hours during the break", date: "30 Jun 2026", image: assetUrl("notices/vacation-schedule.jpg"), description: "The library remains open on Tuesday and Thursday afternoons for reading, returns, and quiet project time." },
+  { id: 6, title: "Student council nominations", date: "18 Jun 2026", image: assetUrl("events/cultural-program-5.JPG"), description: "Learners in Grades 6–8 can nominate themselves or a peer for the next student council cycle." },
 ];
 
 export default function Notices() {

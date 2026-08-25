@@ -1,7 +1,7 @@
 // Editorial School Journal about section: offset reading measure, field-note metadata, and paper-card storytelling.
 import { ArrowUpRight, Compass, HeartHandshake, MapPin, Sparkles } from "lucide-react";
 import { Link } from "wouter";
-import { schoolConfig } from "@/lib/school-config";
+import { assetUrl, schoolConfig } from "@/lib/school-config";
 import EditorialRail from "@/components/EditorialRail";
 
 const principles = [
@@ -38,7 +38,7 @@ export default function About() {
 
         <div className="mt-28 grid items-stretch gap-6 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="relative min-h-[340px] overflow-hidden rounded-[1.6rem] rounded-bl-md bg-paper-deep">
-            <img src="/events/science-exhibition.jpg" alt="Students collaborating around a model bridge in the school workshop" className="absolute inset-0 h-full w-full object-cover" />
+            <img src={assetUrl("events/science-exhibition.jpg")} alt="Students collaborating around a model bridge in the school workshop" className="absolute inset-0 h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/10 to-transparent" />
             <div className="absolute bottom-0 left-0 p-7 text-white sm:p-9"><p className="eyebrow text-coral">A day at SRB School</p><p className="mt-3 max-w-sm font-display text-3xl leading-tight">The best lessons leave the room with you.</p></div>
           </div>

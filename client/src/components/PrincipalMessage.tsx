@@ -1,12 +1,12 @@
 // Editorial School Journal principal letter: a human portrait, letterform rhythm, and a small bilingual bridge.
 import { ArrowUpRight, Quote } from "lucide-react";
 import { Link } from "wouter";
-import { schoolConfig } from "@/lib/school-config";
+import { assetUrl, schoolConfig } from "@/lib/school-config";
 
 export const principalData = {
   name: "Mrs.Chuda Devi Poudel",
   title: "Principal & Founding Educator",
-  image: "/staff/principal.jpg",
+  image: assetUrl("staff/principal.jpg"),
   message:
     "A school is not only a place where a child learns what is already known. It is a place where they learn to notice, to ask better questions, and to take responsibility for what happens next. At SRB, we make room for rigorous study and for the slower work of becoming dependable to one another.",
   nepali: "विद्यालय केवल एउटा यस्तो ठाउँ मात्र होइन जहाँ बालबालिकाले पहिल्यैदेखि थाहा भएका कुराहरू मात्र सिक्छन्। यो यस्तो ठाउँ हो जहाँ उनीहरूले सूक्ष्म अवलोकन गर्न, अझ राम्रा प्रश्नहरू सोध्न र त्यसपछिका घटनाहरूको जिम्मेवारी लिन सिक्छन्। यस स्कुलमा, हामी गहिरो अध्ययनका साथै एक-अर्काप्रति भरपर्दो बन्ने यो समय लाग्ने तर अर्थपूर्ण कामको लागि पनि ठाउँ बनाउँछौं।",
